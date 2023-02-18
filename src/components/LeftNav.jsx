@@ -26,7 +26,7 @@ import { Context } from '../context/ContextApi';
   }
 
   return (
-    <div className={`md:block  w-[240px] overflow-auto h-full py-4 bg-black absolute md:relative z-10 translate-x-[-240px] md:translate-x-0 transition-all ${mobileMenu ? "translate-x-0": ""}`}>
+    <div className={`md:block  w-[240px] overflow-auto h-full py-4 bg-white absolute md:relative z-10 translate-x-[-240px] md:translate-x-0 transition-all ${mobileMenu ? "translate-x-0": ""}`}>
 
       <div className="flex px-5 flex-col" >
         {categories.map((item) => {
@@ -39,7 +39,7 @@ import { Context } from '../context/ContextApi';
                 clickHandler(item.name, item.type);
                 navigate("/")
               }}
-              className={`${selectCategories === item.name ? "bg-white/[0.5]" :  " "}`}
+              className={`${selectCategories === item.name ? "bg-black/[0.5]" :  " "}`}
 />
 
 {item.divider && (
@@ -51,7 +51,7 @@ import { Context } from '../context/ContextApi';
 
 <hr className="my-5 border-white/[0.2]"/>
 
-<div className="text-white/[0.5] text-[12px]">
+<div className="text-black/[0.5] text-[12px]">
   Clone by : Prince kumar
 </div>
       </div>
