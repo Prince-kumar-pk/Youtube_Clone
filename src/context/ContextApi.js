@@ -21,7 +21,7 @@ const fetchSelectedCategoryData = (query) =>{
     fetchDataFromApi(`search/?q=${query}`).then(({contents})=>{
         console.log(contents)
         setSearchResults(contents);
-        setLoading(true)
+        setLoading(false)
     })
 }
 
