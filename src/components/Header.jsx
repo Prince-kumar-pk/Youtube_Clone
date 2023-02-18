@@ -37,7 +37,7 @@ const Header = () => {
     const pageName = pathname?.split("/")?.filter(Boolean)?.[0];
 
     return (
-        <div className="sticky top-0 z-10 flex flex-row items-center justify-between h-14 px-4 md:px-5 bg-white dark:bg-black">
+        <div className="sticky top-0 z-10 flex flex-row items-center justify-between h-14 px-4 md:px-5 bg-black dark:bg-black">
             {loading && <Loader />}
 
             <div className="flex h-5 items-center">
@@ -55,7 +55,7 @@ const Header = () => {
                 )}
                 <Link to="/" className="flex h-5 items-center">
                     <img
-                        className="h-full hidden dark:md:block"
+                        className="h-full hidden md:block"
                         src={ytLogo}
                         alt="Youtube"
                     />
@@ -97,7 +97,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="flex h-8 w-8 overflow-hidden rounded-full md:ml-4">
-                    <img src="https://xsgames.co/randomusers/assets/avatars/female/67.jpg" alt="" />
+                    <img src="https://media.licdn.com/dms/image/D4D03AQEEsMRnr3RdIw/profile-displayphoto-shrink_400_400/0/1673983238034?e=1681948800&v=beta&t=LaLJuUkcIe_3qDkcG9dHpP1a6FSXuaQ0EUWtUWVMbU8" alt="" />
                 </div>
             </div>
         </div>
