@@ -26,7 +26,7 @@ import { Context } from '../context/ContextApi';
   }
 
   return (
-    <div className={`md:block  w-[240px] overflow-auto h-full py-4 bg-white absolute md:relative z-10 translate-x-[-240px] md:translate-x-0 transition-all ${mobileMenu ? "translate-x-0": ""}`}>
+    <div className={`md:block  w-[240px] overflow-auto h-full py-4 bg-white absolute md:relative z-10  md:translate-x-0 transition-all   ${mobileMenu?"translate-x-0":" translate-x-[-240px]"}`}>
 
       <div className="flex px-5 flex-col" >
         {categories.map((item) => {
